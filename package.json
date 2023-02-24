@@ -1,22 +1,14 @@
 {
-  "name": "readmegenerator",
+  "name": "static-site",
   "version": "1.0.0",
-  "description": "README generator with node js",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kifeakor22/readMeGenerator.git"
-  },
-  "author": "KC Ifeakor",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kifeakor22/readMeGenerator/issues"
-  },
-  "homepage": "https://github.com/kifeakor22/readMeGenerator#readme",
   "dependencies": {
-    "inquirer": "^6.5.2"
+    "inquirer": "^6.3.1"
   }
 }
