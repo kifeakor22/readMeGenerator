@@ -36,7 +36,13 @@ function generateMarkdown(data) {
   To install dependencies , run   
 
   \`\`\`
-  ${data.}
+  ${data.installation}
+
+  \`\`\`
+
+  ## Usage 
+
+  ${data.usage}
 
 `;
 }
