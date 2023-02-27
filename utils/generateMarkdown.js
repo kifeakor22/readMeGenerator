@@ -83,12 +83,7 @@ function generateMarkdown(data) {
 ## Questions 
   [Github profile](https://github.com/${data.github})
 
-  \`\`\`
-
-${emailLink(data.email)}
-
-
-  \`\`\`
+  ${emailLink(data.email)}
 
 `;
 }
