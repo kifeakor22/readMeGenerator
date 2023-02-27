@@ -12,6 +12,14 @@ const licenseLink = (license) => {
   return""
 }
 
+const emailLink = (email) => {
+  if(email !== "None") {
+    return `\n* [Email me](mailto:email)`
+  }
+  return ""
+
+}
+
 
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -25,16 +33,17 @@ function generateMarkdown(data) {
   * [Instalation](#installation)
 
   * [Usage](#usage)
-
-  ${licenseLink(data.license)}
-
   * [Contributing](#contributing)
 
   * [Test](#tests)
 
   * [Questions](#questions)
+
+  ${licenseLink(data.license)}
+
+ 
   
-  ## Installation
+## Installation
    
   To install dependencies , run   
 
@@ -43,19 +52,19 @@ function generateMarkdown(data) {
 
   \`\`\`
 
-  ## Usage 
+## Usage 
 
   ${data.usage}
 
-  ## License
+## License
 
   \`\`\`
 
-  [License](${renderLicense(data.license)})
+  ${data.license}
 
   \`\`\`
 
-  ## Contributing
+## Contributing
 
   \`\`\`
 
@@ -63,7 +72,7 @@ function generateMarkdown(data) {
 
   \`\`\`
 
-  ## Tests 
+## Tests 
 
   \`\`\`
 
@@ -71,12 +80,13 @@ function generateMarkdown(data) {
 
   \`\`\`
 
-  ## Questions 
-  ![Github profile](https://github.com/${data.github})
+## Questions 
+  [Github profile](https://github.com/${data.github})
 
   \`\`\`
 
-  Email me at${data.email} with any questions
+${emailLink(data.email)}
+
 
   \`\`\`
 
